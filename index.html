@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppFarm Studio - 習慣追跡アプリ & ウェブアプリポートフォリオ</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.95;
+        }
+
+        main {
+            padding: 40px 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            font-size: 1.8em;
+            color: #667eea;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .project-card {
+            background: #f8f9fa;
+            border-left: 5px solid #667eea;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.2);
+        }
+
+        .project-card h3 {
+            color: #667eea;
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .features {
+            list-style: none;
+            margin: 15px 0;
+        }
+
+        .features li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+            color: #666;
+        }
+
+        .features li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        footer {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            color: #999;
+            border-top: 1px solid #e9ecef;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+
+            section h2 {
+                font-size: 1.3em;
+            }
+
+            main {
+                padding: 20px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌾 AppFarm Studio</h1>
+            <p>習慣を育てるウェブアプリ集</p>
+        </header>
+
+        <main>
+            <section>
+                <h2>📱 プロジェクト</h2>
+                
+                <div class="project-card">
+                    <h3>🎯 Habit Tracker（習慣追跡）</h3>
+                    <p>毎日の習慣を記録して、目標達成に向けて継続的に取り組むためのシンプルなアプリです。</p>
+                    <ul class="features">
+                        <li>日々の習慣を記録</li>
+                        <li>連続日数を自動カウント</li>
+                        <li>進捗状況を可視化</li>
+                        <li>ローカルストレージで自動保存</li>
+                    </ul>
+                    <a href="./habit-tracker/" class="btn">アプリを開く →</a>
+                </div>
+            </section>
+
+            <section>
+                <h2>🎯 ビジョン</h2>
+                <p>AppFarm Studio は、シンプルで効果的な個人成長のためのツールを作成することに専念しています。毎日の一貫した行動を通じて、あなたの目標達成をサポートする各アプリを丁寧に設計しています。</p>
+                <p>「継続は力なり」という信念のもと、小さな習慣の積み重ねが大きな変化を生み出すことを信じています。</p>
+            </section>
+
+            <section>
+                <h2>📞 お問い合わせ</h2>
+                <p>何かご質問や、アプリについてのフィードバックがあればお気軽にご連絡ください！</p>
+                <ul class="features">
+                    <li><a href="https://github.com/maindokomyu-max" target="_blank" style="color: #667eea;">GitHub: @maindokomyu-max</a></li>
+                    <li><a href="https://x.com/yourhandle" target="_blank" style="color: #667eea;">Twitter/X: @yourhandle</a></li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2026 AppFarm Studio. Built with ❤️ by maindokomyu-max</p>
+        </footer>
+    </div>
+</body>
+</html>
